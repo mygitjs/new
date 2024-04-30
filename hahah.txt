@@ -1,7 +1,17 @@
-git status查看本地库的状态
+git status查看本地库的状态，以及提交的文件
 git remote -v 查看绑定
 ssh查看是否有ssh
 ssh-keygen -t rsa 用来生成密钥实现github和本地git的绑定，生成的rsb_public的密钥拷贝到github中setting ssh中并生成。
+git add . 添加到index
+git branch 分支名 创建一个分支
+git checkout 分支名 切换分支
+git branch -d 分支名 删除分支名
+git checkout -b 想要复制的分支名  从切换的分支在创建一个分支
+git push origin --delete 远程分支名 删除远程分支名
+git branch -vv 查看分支的 关联
+git branch --set-upstream-to=origin/remote_branch local_branch #方法1
+git branch -u origin/remote_branch  local_branch #方法2
+git push --set-upstream origin master 当前分支推到远端，如果远端没有则创建
 第一种拉远端库并修改后提交远端
 1、git clone add origin 《分支》
 2、这种本地库将自动关联远程库

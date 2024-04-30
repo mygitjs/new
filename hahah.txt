@@ -1,0 +1,18 @@
+git status查看本地库的状态
+git remote -v 查看绑定
+ssh查看是否有ssh
+ssh-keygen -t rsa 用来生成密钥实现github和本地git的绑定，生成的rsb_public的密钥拷贝到github中setting ssh中并生成。
+第一种拉远端库并修改后提交远端
+1、git clone add origin 《分支》
+2、这种本地库将自动关联远程库
+3、git add/commit -m "提交名字"  （当新增文件不属于本库需要add
+4、git pull origin 远端分支名字（当出现无法拉取成功时，git reset --hard，清除未提交的缓存，或者cmd下ipconfig /flushdns）
+5、git push origin 远端分支名字（当本地库有更新，并已经git commit后）
+第二种本地创建库，并初始化，关联远端库，更改，提交远端
+1、创建一个本地库路径，在路径文件下右键git bash here打开终端。
+2、git init。初始化一个库
+3、git remote add origin <分支url>
+4、git pull origin  远端分支名字（当出现无法拉取成功时，git reset --hard，清除未提交的缓存，或者cmd下ipconfig /flushdns）
+5、git push origin 远端分支名字（当本地库有更新，并已经git commit后）
+
+

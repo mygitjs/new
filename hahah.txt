@@ -13,7 +13,7 @@ git branch --set-upstream-to=origin/remote_branch local_branch #方法1
 git branch -u origin/remote_branch  local_branch #方法2
 git push --set-upstream origin master 当前分支推到远端，如果远端没有则创建
 第一种拉远端库并修改后提交远端
-1、git clone add origin 《分支》
+1、git clone <远程分支url>将远程分支来到本地库
 2、这种本地库将自动关联远程库
 3、git add/commit -m "提交名字"  （当新增文件不属于本库需要add
 4、git pull origin 远端分支名字（当出现无法拉取成功时，git reset --hard，清除未提交的缓存，或者cmd下ipconfig /flushdns）

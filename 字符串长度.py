@@ -1,30 +1,20 @@
-# in 关键字判断一个字符串是否包含特定子字符串
-s = "hello python"
-if "python" in s:
-    print("字符串包含 python")
-else:
-    print("字符串不包含 python")
+# len()函数。这个函数可以返回一个字符串中的字符数，即字符串的长度。下面是一个简单的示例（如果想要正确计算中英文混合字符串的长度，可以先将字符串转换为Unicode编码，再计算长度）
+my_string = "Hello, World!"
+string_length = len(my_string)
+print("The length of the string is:", string_length)
+#结果：The length of the string is: 13
 
+chinese_string = "你好，世界！"
+unicode_chinese_string = chinese_string.encode('unicode_escape').decode()
+chinese_string_length = len(unicode_chinese_string)
+print("The length of the Chinese string is:", chinese_string_length)
+
+
+#忽略空格计算字符串长度
+# 忽略字符串中的空格，只计算非空格字符的长度。这个可以通过去除字符串中的空格后再计算长度来实现，例如：
+my_string = " Hello, World! "
+no_space_string = my_string.replace(" ", "")
+no_space_string_length = len(no_space_string)
+print("The length of the string without spaces is:", no_space_string_length)
 #=========
-#find() 方法 查找特定子字符串在字符串中的位置，如果找到则说明字符串包含该子字符串，示例代码如下
-s = "hello python"
-if s.find("python") != -1:
-    print("字符串包含 python")
-else:
-    print("字符串不包含 python")
-#=========
-# index() 方法来查找特定子字符串在字符串中的位置，如果找到则说明字符串包含该子字符串，示例代码如下
-s = "hello python"
-try:
-    s.index("python")
-    print("字符串包含 python")
-except ValueError:
-    print("字符串不包含 python")
-#=========
-# Python 是区分大小写的，因此 “python” 和 “Python” 是两个不同的子字符串。如果想忽略大小写进行判断，可以将字符串都转换为小写或大写再进行比较，示例如下
-s = "hello Python"
-sub_str = "python"
-if sub_str.lower() in s.lower():
-    print("字符串包含 python")
-else:
-    print("字符串不包含 python")
+

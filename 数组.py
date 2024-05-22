@@ -24,4 +24,22 @@ def my_function(x):
     return x*2
 output = my_function(2)
 print(output)
-import matplotlib
+
+# 运行以下代码，将会得到一张sin函数的图像。
+import matplotlib.pyplot as plt
+x = np.linspace(0,2*np.pi,100)
+y = np.sin(x)
+plt.plot(x,y)
+plt.show()
+# 运行以上代码，将会得到一张sin函数的图像。
+
+# 使用循环遍历字符串
+def a(b):
+    result = ""
+    for c in b:
+        if c.isdigit():
+            result += c
+    return result
+s = "asfs21dfds55sdfsf878ggd"
+numbers = a(s)
+print(numbers)

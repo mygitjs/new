@@ -28,3 +28,15 @@ if sub_str.lower() in s.lower():
     print("字符串包含 python")
 else:
     print("字符串不包含 python")
+
+#使用负数索引访问倒数第二个字符
+# 在Python中，可以使用负数索引来访问字符串中倒数第二个字符。通常，索引从0开始，表示第一个字符；而负数索引从-1开始，表示倒数第一个字符。因此，要获得倒数第二个字符，可以使用索引-2。下面是一个示例：
+s = "hello world"
+second_last_char = s[-2]
+print(second_last_char)
+
+s = "Hello"
+second_last_char = s[-2]
+s = "Python"
+second_last_char = s[-1]
+

@@ -39,4 +39,32 @@ s = "Hello"
 second_last_char = s[-2]
 s = "Python"
 second_last_char = s[-1]
+# 判断数据为空
+data = None
+if data is None:
+    print("数据为空")
+else:
+    print("数据不为空")
 
+
+import numpy as np
+
+data = np.nan
+if np.isnan(data):
+    print("数据为NaN")
+else:
+    print("数据不为NaN")
+import pandas as pd
+data = {"A":[1,None,3,np.nan,5],
+        "B":[None,"hello","world",np.nan,"python"]}
+df = pd.DataFrame(data)
+#
+for column in df.columns:
+    print(f"Column {column}:")
+    for index,value in df[column].iteritems():
+        if pd.isnull(value):
+            print(f"Index {index}: 数据为空")
+        if pd.isna(value):
+            print(f"Index{index}: 数据为NaN")
+df.fillna(0,inplace=True)
+print(df)

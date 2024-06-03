@@ -1,5 +1,6 @@
 //**************************************
  git add SumExp/附加ToProcess.txt
+ git commit -m gb
  git push origin exp
 //**************************************
 must be debug version dll：

@@ -1,0 +1,15 @@
+//*************************************
+ git add SumExp/gdb卡死.txt
+ git commit -m gb
+ git push origin exp
+//*************************************
+1、管理员打开cmd或powershell
+2、输入gdb，回车。
+3、att 进程号，然后回车，附加ToProcess
+4、按c键，回车，继续执行
+5、软件卡死时，在powershell界面按ctrl+c退出
+6、输入 info thread，回车，会弹出当前运行的线程号
+7、输入thread + 线程号，回车
+8、输入bt，回车查看该线程完整堆栈信息
+9、如有类似mutex或semaphore等信息，需要分析是否是此线程产生死锁
+10、q，y退出gdb，可能会输出部分软件部分未显示的日志。

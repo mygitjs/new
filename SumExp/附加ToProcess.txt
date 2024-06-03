@@ -1,3 +1,7 @@
+//**************************************
+ git add SumExp/附加ToProcess.txt
+ git push origin exp
+//**************************************
 must be debug version dll：
 
 1、PowerShell or cmd run as administrator

@@ -1,0 +1,9 @@
+must be debug version dll：
+
+1、PowerShell or cmd run as administrator
+2、gdb
+3、att ProcessID（打开任务管理器，看进程ID号）
+4、回车
+5、回车
+6、c
+7、异常崩溃的时候输入bt，输出崩溃点的堆栈信息。
